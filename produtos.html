@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+    <header>
+        <nav id="home">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#categoria">Categorias</a></li>
+                <li><a href="#novidade">Novidades</a></li>
+                <li><a href="#populares">Populares</a></li>
+                <li><a href="#lista">Lista de Desejos</a></li>
+                <li class="dropdown">
+                    <a href="#servicos" class="dropbtn">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#termos">Termos e condições</a></li>
+                        <li><a href="#noticias">Noticías</a></li>
+                        <li><a href="#faq">FAQ/Ajuda</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                <li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="login.html"> <button class="btn-login"> Cadastre-se</button></a></li>
+            </ul>
+        </nav> 
+    </header>
+
+<br>
+<hr>
+<br>
+
+    <div class="product-container">
+        <div class="image-gallery">
+            <img id="main-image" src="https://br.web.img3.acsta.net/medias/nmedia/18/87/90/91/19962790.jpg" alt="Imagem do filme1">
+            <div class="thumbnails">
+                <img src="https://br.web.img3.acsta.net/medias/nmedia/18/87/90/91/19962790.jpg" alt="Imagem 1" onclick="changeImage('https://br.web.img3.acsta.net/medias/nmedia/18/87/90/91/19962790.jpg')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ChEjxcIlMOhumk7STv4OpjQnnmtrMFx6mA&s" alt="Imagem 2" onclick="changeImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ChEjxcIlMOhumk7STv4OpjQnnmtrMFx6mA&s')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZeh4qxzi0r0jl-VDqfbXko-wEWoRyl7EEhQ&s" alt="Imagem 3" onclick="changeImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZeh4qxzi0r0jl-VDqfbXko-wEWoRyl7EEhQ&s')">
+            </div>
+        </div>
+        
+        <div class="detalhes">
+            <h1>Enrolados</h1>
+            <p>Titulo:Enrolados</p>
+            <p>Gênero: Comédia</p>
+            <p>Sinopse: Rapunzel, uma jovem princesa com longos cabelos mágicos, vive isolada em uma torre sob os cuidados da malvada Gothel. Quando o bandido Flynn Rider invade sua torre, Rapunzel decide aproveitar a oportunidade para escapar e realizar seu sonho de ver o mundo. Juntos, eles embarcam em uma emocionante aventura, enfrentando desafios e descobrindo o verdadeiro significado da liberdade e do amor.</p>
+            <p class="preco">R$ 10,99</p>
+            
+            <div class="opçao">
+                <label for="size">Tempo de uso:</label>
+                <select id="size">
+                    <option value="temp1">1 dia</option>
+                    <option value="temp2">7 dias</option>
+                    <option value="temp3">30 dias</option>
+                </select>
+                
+                <label for="qualidade">Qualidade:</label>
+                <select id="qualidade">
+                    <option value="p">720p</option>
+                    <option value="pp">1080p</option>
+                    <option value="k">4k</option>
+                </select>
+            </div>
+
+            <a href="carrinho.html"><button class="buy-button">Alugar</button></a>
+        </div>
+    </div>
+<br>
+<hr>
+<br>
+    <div class="comentarios">
+        <h2>Avaliação/Comentários dos Usuários</h2>
+        <div class="commentario">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgwZYoWFN7nzg-WzJIu_eWuXD-CSCcmINhVg&s" alt="Usuário 1" class="user-photo">
+            <p><strong>Felipe:</strong>Um filme emocionante que me prendeu do começo ao fim! As atuações são incríveis e a trilha sonora é perfeita. Recomendo para todos!</p>
+        </div>
+        <div class="commentario">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzslu-z2zQm3ExaWL8610W5vdJUgQTr3O1Q&s" alt="Usuário 2" class="user-photo">
+            <p><strong>Vitor:</strong>Uma ótima história com personagens bem desenvolvidos. A fotografia é linda e a direção é excelente. Só achei o final um pouco previsível.</p>
+        </div>
+    </div>
+
+<br>
+<hr>
+<br>
+
+<div class="product-container2">
+    <div class="image-gallery2">
+        <img id="main-image2" src="https://br.web.img3.acsta.net/medias/nmedia/18/87/89/74/19962669.jpg" alt="Imagem do filme1">
+        <div class="thumbnails2">
+            <img src="https://br.web.img3.acsta.net/medias/nmedia/18/87/89/74/19962669.jpg" alt="Imagem 11" onclick="changeImage2('https://br.web.img3.acsta.net/medias/nmedia/18/87/89/74/19962669.jpg')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlb80XeCGlpealC1rf-_s_HvgW_ZMaeNjg1g&s" alt="Imagem 22" onclick="changeImage2('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlb80XeCGlpealC1rf-_s_HvgW_ZMaeNjg1g&s')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qKhycwWcoszpArspqrgt6gQcRZuY6X-awQ&s" alt="Imagem 33" onclick="changeImage2('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qKhycwWcoszpArspqrgt6gQcRZuY6X-awQ&s')">
+        </div>
+    </div>
+    
+    <div class="detalhes2">
+        <h1>A princesa e o sapo</h1>
+        <p>Titulo:A princesa e o sapo</p>
+        <p>Gênero: Comédia</p>
+        <p>Sinopse: Tiana, uma jovem sonhadora de Nova Orleans, beija um sapo que se revela o príncipe Naveen. O beijo não o transforma de volta, e Tiana acaba se tornando um sapo também. Juntos, eles devem encontrar uma maneira de quebrar a maldição, enquanto aprendem sobre amor e sacrifício em sua jornada mágica.</p>
+        <p class="preco2">R$ 10,99</p>
+        
+        <div class="opçao2">
+            <label for="size">Tempo de uso:</label>
+            <select id="size">
+                <option value="temp1">1 dia</option>
+                <option value="temp2">7 dias</option>
+                <option value="temp3">30 dias</option>
+            </select>
+            
+            <label for="qualidade">Qualidade:</label>
+            <select id="qualidade">
+                <option value="p">720p</option>
+                <option value="pp">1080p</option>
+                <option value="k">4k</option>
+            </select>
+        </div>
+
+        <a href="carrinho.html"><button class="buy-button">Alugar</button></a>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class="comentarios2">
+    <h2>Avaliação/Comentários dos Usuários</h2>
+    <div class="commentario2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5q9GlWCAoQHPpOiDOECuYUeXW9MQP7Ddt-Q&s" alt="Usuário 1" class="user-photo">
+        <p><strong>Claudio:</strong>Um dos melhores filmes que já vi! A história é poderosa e as performances dos atores são de tirar o fôlego. Uma verdadeira experiência cinematográfica!</p>
+    </div>
+    <div class="commentario2">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSAOmPf5AtV5mdHQHASQg1P7Rl-0GmwQFuiA&s" alt="Usuário 2" class="user-photo">
+        <p><strong>Roberto:</strong>É um filme que vale a pena assistir se você estiver procurando algo leve. Algumas partes são engraçadas, mas não deixa uma impressão duradoura.</p>
+    </div>
+</div>
+
+<br>
+<hr>
+<br>
+
+<div class="product-container3">
+    <div class="image-gallery3">
+        <img id="main-image3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrAL1lItg2dk-AHELQ1ACZ0-zyX5eW2XXQ8A&s" alt="Imagem do filme1">
+        <div class="thumbnails3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrAL1lItg2dk-AHELQ1ACZ0-zyX5eW2XXQ8A&s" alt="Imagem 111" onclick="changeImage3('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrAL1lItg2dk-AHELQ1ACZ0-zyX5eW2XXQ8A&s')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGZTxQlgLyFxq8v4a-kgHCavNw0ph97vsJlg&s" alt="Imagem 222" onclick="changeImage3('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGZTxQlgLyFxq8v4a-kgHCavNw0ph97vsJlg&s')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5RLNYkwFkfncw-EMsgnrW6BoasDDZ2Q31mw&s" alt="Imagem 333" onclick="changeImage3('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5RLNYkwFkfncw-EMsgnrW6BoasDDZ2Q31mw&s')">
+        </div>
+    </div>
+    
+    <div class="detalhes3">
+        <h1>Mulan</h1>
+        <p>Titulo:Mulan</p>
+        <p>Gênero: Aventura</p>
+        <p>Sinopse: Mulan disfarça-se de homem para lutar no lugar de seu pai doente no exército chinês contra invasores. Com a ajuda do dragão Mushu, ela enfrenta desafios e descobre seu verdadeiro valor, tornando-se uma heroína que luta pela honra de sua família e pela proteção de sua nação.</p>
+        <p class="preco3">R$ 10,99</p>
+        
+        <div class="opçao3">
+            <label for="size">Tempo de uso:</label>
+            <select id="size">
+                <option value="temp1">1 dia</option>
+                <option value="temp2">7 dias</option>
+                <option value="temp3">30 dias</option>
+            </select>
+            
+            <label for="qualidade">Qualidade:</label>
+            <select id="qualidade">
+                <option value="p">720p</option>
+                <option value="pp">1080p</option>
+                <option value="k">4k</option>
+            </select>
+        </div>
+
+        <a href="carrinho.html"><button class="buy-button">Alugar</button></a>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class="comentarios3">
+    <h2>Avaliação/Comentários dos Usuários</h2>
+    <div class="commentario3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="Usuário 1" class="user-photo">
+        <p><strong>João:</strong>O filme tem um bom conceito, mas a execução deixou a desejar. Algumas cenas pareciam forçadas e o ritmo foi irregular.</p>
+    </div>
+    <div class="commentario3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBPJbS5KOjq6Lpv9fQdY-2QJ2uLWubdk6sJg&s" alt="Usuário 2" class="user-photo">
+        <p><strong>Lucas:</strong> Uma ótima história com personagens bem desenvolvidos. A fotografia é linda e a direção é excelente. Só achei o final um pouco previsível.</p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+<br>
+<hr>
+<br>
+    <footer><center><div class="footer-section"></div>
+        <p>Somos uma empresa dedicada a aluguel de filmes!</p>
+</div>
+   <div class="footer-section">
+        <h4>Links Rápidos</h4>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#Contato">Contato</a></li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h4 id="contato">Contato</h4>
+        <p>Theus@AlugaFlicks.com</p>
+        <p>Telefone: (11) 19 4321 8765</p>
+        <p>Endereço: Rua Parque serra, 32, São Paulo-SP</p>
+    </div>
+    <div class="footer-section">
+        <h4>Siga-nos</h4>
+        <div class="social-links">
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+            <a href="https://www.cinemark.com.br/" target="_blank">CineMark</a>
+            <a href="https://www.ingresso.com/" target="_blank">Ingresso</a>
+        </div>
+    </div>
+</div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Empresa. Todos direitos reservados</p>
+    </div>
+</center>
+</footer>
+</body>
+</html>

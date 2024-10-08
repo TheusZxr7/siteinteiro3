@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Aluguel de Filmes</title>
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <header>
+        <nav id="home">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#categoria">Categorias</a></li>
+                <li><a href="#novidade">Novidades</a></li>
+                <li><a href="#populares">Populares</a></li>
+                <li><a href="#lista">Lista de Desejos</a></li>
+                <li class="dropdown">
+                    <a href="#servicos" class="dropbtn">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#termos">Termos e condições</a></li>
+                        <li><a href="#noticias">Noticías</a></li>
+                        <li><a href="#faq">FAQ/Ajuda</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                <li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="login.html"> <button class="btn-login"> Cadastre-se</button></a></li>
+            </ul>
+        </nav> 
+    </header>
+    <br>
+    <hr>
+    <br>
+
+    <h1>Carrinho de Compras - Aluguel de Filmes</h1>
+<form id="carrinho">
+    <h2>Selecione o Filme</h2>
+    <select id="filme" required>
+        <option value="">Escolha um filme abaixo</option>
+        <option value="filme1" data-preco="10">Enrolados </option>
+        <option value="filme2" data-preco="30">A princesa e o sapo</option>
+        <option value="filme3" data-preco="50">Mulan</option>
+    </select>
+
+    <h2>Duração do Aluguel</h2>
+    <select id="tempo" required>
+        <option value="">Escolha o tempo de aluguel</option>
+        <option value="1">1 Dia</option>
+        <option value="7">7 Dias</option>
+        <option value="30">30 Dias</option>
+    </select>
+
+    <h2>Qualidade</h2>
+    <select id="qualidade" required>
+        <option value="">Escolha a qualidade</option>
+        <option value="720p">720p</option>
+        <option value="1080p">1080p</option>
+        <option value="4K">4K</option>
+    </select>
+
+    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+</form>
+
+<h2>Itens no Carrinho</h2>
+<ul id="itensCarrinho"></ul>
+<p id="total">Total Final: R$ 0,00</p>
+    <script src="carrinho.js"></script>
+</body>
+</html>

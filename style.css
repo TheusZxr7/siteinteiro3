@@ -1,0 +1,226 @@
+.imagem {
+    width: 200px; /* Define a largura fixa */
+    height: 200px; /* Define a altura fixa */
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner sem distorcer */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço suficiente */
+    gap: 10px; /* Espaço entre as imagens */
+    padding: 20px; /* Espaço interno da caixa */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+}
+
+.imagem {
+    width: 200px; /* Largura fixa das imagens */
+    height: 200px; /* Altura fixa das imagens */
+    object-fit: cover; /* Mantém a proporção e cobre a área definida */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para um efeito de profundidade */
+    transition: transform 0.3s ease; /* Transição suave para efeito de hover */
+}
+
+.imagem:hover {
+    transform: scale(1.05); /* Aumenta a imagem um pouco ao passar o mouse */
+}
+
+/*slides*/
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%; /* Número de slides x 100% */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Animação do slider */
+@keyframes slideAnimation {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+.slides {
+    animation: slideAnimation 18s infinite;
+}
+
+
+
+*{
+    background-color: lightgray;
+    margin: 5px;
+}
+
+/*menu com dropdowns*/
+nav{
+    background-color: white;
+    padding: 10px 0;
+    }
+    nav ul{
+        background-color: black;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        background-color: yellow;
+        margin: 0,15px;
+    }
+    nav ul li a{
+        color: red;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        transition: color 0,5;
+    }
+    nav ul li a:hover{
+    color: white;
+    }
+    nav ul li .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        min-width: 160px;
+        padding: 0;
+    }
+    /*dropdown*/
+    nav ul li .dropdown-content li {
+        margin: 0;
+    }
+    
+    nav ul li .dropdown-content li a{
+        padding: 1px 20px;
+    }
+    
+    nav ul li .dropdown-content li a:hover{
+        background-color: darkgrey;
+    }
+    
+    nav ul li:hover .dropdown-content{
+        display: block;
+    }
+
+    /*categoria ul*/
+
+    ul.custom-list {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    
+    ul.custom-list li {
+        position: relative;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    ul.custom-list li::before {
+        content: '';
+        position: relative;
+        left: 0;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        background: #007bff;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+    
+    ul.custom-list li:last-child {
+        border-bottom: none;
+    }
+
+    /*footer*/
+footer{
+    background-color: black;
+    color: black;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-section {
+    flex-basis:  23%;
+    margin-bottom: 20px;
+}
+.footer-section h4{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+}
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.footer-section ul{
+    list-style-type: none;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a:hover{
+    color: aliceblue;
+}
+.social-links a{
+    display: inline-block;
+    margin-left: 10px;
+    color: yellow;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-links a:hover{
+    color: grey;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+.footer-bottom p{
+margin: 0;
+}
+
+button {
+    padding: 10px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

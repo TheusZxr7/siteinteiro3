@@ -1,0 +1,170 @@
+ *{
+    background-color: lightgray;
+ }
+
+ nav{
+    background-color: yellow;
+    padding: 10px 0;
+    }
+    nav ul{
+        background-color: lightgray;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        background-color: yellow;
+        margin: 0,15px;
+    }
+    nav ul li a{
+        color: red;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        transition: color 0,5;
+    }
+    nav ul li a:hover{
+    color: white;
+    }
+    nav ul li .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        min-width: 160px;
+        padding: 0;
+    }
+    /*dropdown*/
+    nav ul li .dropdown-content li {
+        margin: 0;
+    }
+    
+    nav ul li .dropdown-content li a{
+        padding: 1px 20px;
+    }
+    
+    nav ul li .dropdown-content li a:hover{
+        background-color: darkgrey;
+    }
+    
+    nav ul li:hover .dropdown-content{
+        display: block;
+    }
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%; /* Número de slides x 100% */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/*pessoas card*/
+
+.container {
+    display: flex; /* Define o contêiner como um flexbox */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+}
+
+/* Estilo para cada card */
+.card {
+    background-color: lightgray;
+    border: 10px solid black;
+    border-radius: 8px; /* Arredonda os cantos dos cards */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
+    flex: 1; /* Permite que os cards cresçam igualmente */
+    max-width: 300px; /* Define uma largura máxima para os cards */
+}
+
+/* Estilo para o título dos cards */
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: black;
+}
+
+/* Estilo para o parágrcafo dos cards */
+.card p {
+    color: black;
+}
+
+/*footer*/
+footer{
+    background-color: black;
+    color: black;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-section {
+    flex-basis:  23%;
+    margin-bottom: 20px;
+}
+.footer-section h4{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+}
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.footer-section ul{
+    list-style-type: none;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a:hover{
+    color: aliceblue;
+}
+.social-links a{
+    display: inline-block;
+    margin-left: 10px;
+    color: yellow;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-links a:hover{
+    color: grey;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+.footer-bottom p{
+margin: 0;
+}
